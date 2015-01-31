@@ -1,0 +1,163 @@
+{
+  "name": "Skills Matrix",
+  "children": [
+    {
+      "name": "Programming",
+      "children": [
+        {"name": "Java", "level": 10},
+        {"name": "C#", "level": 8},
+        {"name": "C++", "level": 4},
+        {"name": "C", "level": 6}
+      ]
+    },
+    {
+      "name": "Scripting",
+      "children": [
+        {"name": "Shell Scripting", "level": 10},
+        {"name": "AWK", "level": 6},
+        {"name": "Groovy", "level": 8},
+        {"name": "JavaScript", "level": 10},
+        {"name": "Python", "level": 8}
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "children": [
+        {"name": "Spring", "level": 10},
+        {"name": "JUnit", "level": 10}
+      ]
+    },
+    {
+      "name": "GUI",
+      "children": [
+        {"name": "Swing", "level": 10},
+        {"name": "Flex", "level": 10},
+        {"name": "AngularJS", "level": 10},
+        {"name": "jQuery", "level": 10},
+        {"name": "Bootsrap", "level": 10},
+        {"name": "HighCharts", "level": 10},
+        {"name": "D3", "level": 7}
+      ]
+    },
+    {
+      "name": "Design Tools",
+      "children": [
+        {"name": "UML", "level": 7}
+      ]
+    },
+    {
+      "name": "OS",
+      "children": [
+        {"name": "Linux", "level": 8},
+        {"name": "Solaris", "level": 7},
+        {"name": "Windows", "level": 9},
+        {"name": "MacOS", "level": 8}
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "children": [
+        {"name": "Docker", "level": 6}
+      ]
+    },
+    {
+      "name": "Messaging",
+      "children": [
+        {"name": "JMS", "level": 10},
+        {"name": "ActiveMQ", "level": 8},
+        {"name": "OracleAQ", "level": 9}
+      ]
+    },
+    {
+      "name": "Servers",
+      "children": [
+        {"name": "Apache", "level": 9},
+        {"name": "IIS", "level": 8},
+        {"name": "JBoss", "level": 9},
+        {"name": "Tomcat", "level": 7},
+        {"name": "Jetty", "level": 8}
+      ]
+    },
+    {
+      "name": "Internet",
+      "children": [
+        {
+          "name": "Protocols",
+          "children": [
+            {"name": "HTTP", "level": 10},
+            {"name": "SOAP", "level": 8},
+            {"name": "ReST", "level": 8}
+          ]
+        },
+        {
+          "name": "Server Side",
+          "children": [
+            {"name": "ASP.NET", "level": 7},
+            {"name": "PHP", "level": 7},
+            {"name": "JSP", "level": 8},
+            {"name": "JSF", "level": 8},
+            {"name": "Facelets", "level": 8},
+            {"name": "JBoss Richfaces", "level": 8},
+            {"name": "ColdFusion", "level": 10}
+          ]
+        },
+        {"name": "XML", "level": 10},
+        {"name": "CSS", "level": 10},
+        {"name": "AJAX", "level": 10},
+        {"name": "HTML5", "level": 10}
+      ]
+    },
+    {
+      "name": "Automation",
+      "children": [
+        {"name": "Expect", "level": 8}
+      ]
+    },
+    {
+      "name": "Version Control",
+      "children": [
+        {"name": "Git", "level": 8},
+        {"name": "SVN", "level": 10},
+        {"name": "CVS", "level": 7},
+        {"name": "MS Visual Source Safe", "level": 6}
+      ]
+    },
+    {
+      "name": "Database",
+      "children": [
+        {
+          "name": "RDBMS",
+          "children": [
+            {"name": "PostgreSQL", "level": 8},
+            {"name": "Oracle", "level": 10}
+          ]
+        },
+        {"name": "JDBC", "level": 10},
+        {"name": "JPA", "level": 8},
+        {"name": "Hibernate", "level": 8},
+        {"name": "Expect", "level": 8},
+        {"name": "SQL", "level": 10},
+        {"name": "Liquibase", "level": 10}
+      ]
+    },
+    {
+      "name": "IDE",
+      "children": [
+        {"name": "IntelliJ IDEA", "level": 10},
+        {"name": "Eclipse", "level": 10},
+        {"name": "NetBeans", "level": 7},
+        {"name": "Oracle JDeveloper", "level": 7},
+        {"name": "SQL Developer", "level": 10},
+        {"name": "Toad", "level": 8}
+      ]
+    },
+    {
+      "name": "Dev Tools",
+      "children": [
+        {"name": "Maven", "level": 10},
+        {"name": "Ant", "level": 8},
+        {"name": "Bower", "level": 7}
+      ]
+    }
+  ]
+}

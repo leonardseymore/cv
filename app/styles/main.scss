@@ -1,0 +1,95 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.avatar {
+  width: 50px;
+  border-radius: 50px;
+
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.29);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.29);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.29);
+}
+
+.bunnykoo {
+  width: 100px;
+  border-radius: 20px;
+
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.29);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.29);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.29);
+}
+
+.horsey {
+  width: 320px;
+  border-radius: 20px;
+
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.29);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.29);
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.29);
+}
+
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node {
+  font: 10px sans-serif;
+}
+
+.high {
+  font: 12px sans-serif;
+  color: red;
+  font-weight: bold;
+}
+
+.high circle {
+  fill: #ff73ff;
+  stroke: #b445ae;
+  stroke-width: 2px;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+[ui-view].ng-enter {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
