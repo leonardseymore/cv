@@ -30,7 +30,43 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.29);
 }
 
-.node circle {
+@font-face {
+  font-family: 'lobster';
+  src: url('../fonts/lobster.otf');
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/OpenSans-Bold.ttf');
+  font-weight: bold;
+}
+
+body {
+  font-family: 'open-sans', arial, sans-serif;
+  background: url(../images/space_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.profileName {
+  height: 50px;
+  font-family: 'lobster', arial, serif;
+  color: #fff;
+  xtext-shadow: 0px 1px 1px #fff, 2px 2px 5px #000;
+  xtext-shadow: 0px 2px 3px #fff;
+  z-index: 200;
+  xtext-shadow: #fff 0px 1px 0, #000 0 -1px 0, 0px 2px 3px #000;
+  text-shadow: 0px 2px 6px #000;
+}
+
+.tree .node circle {
   fill: #fff;
   stroke: steelblue;
   stroke-width: 1.5px;
@@ -81,15 +117,24 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
 }
 
-[ui-view].ng-enter {
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s; /* Firefox < 16 */
-  -ms-animation: fadein 2s; /* Internet Explorer */
-  -o-animation: fadein 2s; /* Opera < 12.1 */
-  animation: fadein 2s;
+@mixin animation($name, $time) {
+  -webkit-animation: $name $time;
+  -moz-animation: $name $time;
+  -ms-animation: $name $time;
+  -o-animation: $name $time;
+  animation: $name $time;
 }
+
+[ui-view].ng-enter .bunnykoo {
+    @include animation(swivelin, 2s);
+  }
 
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+@keyframes swivelin {
+  from { transform: scale(0.1); }
+  to   { transform: scale(1); }
 }

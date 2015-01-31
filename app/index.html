@@ -24,23 +24,28 @@
 <!-- Add your site or application content here -->
 <div class="container">
   <div class="header">
-    <ul class="nav nav-pills pull-right">
+    <ul class="hidden-xs nav nav-pills pull-right">
       <li class="active"><a ui-sref="main"><i class="glyphicon glyphicon-home"></i> Welcome</a></li>
       <li><a ui-sref="skills"><i class="glyphicon glyphicon-certificate"></i> Skills</a></li>
       <li><a ui-sref="experience"><i class="glyphicon glyphicon-book"></i> Experience</a></li>
       <li><a ui-sref="contact"><i class="glyphicon glyphicon-phone"></i> Connect</a></li>
     </ul>
-    <h3 style="color: #ffffff;"><img class="avatar" src="images/avatar.png" alt="Avatar"> Leonard Seymore</h3>
+    <ul class="visible-xs nav nav-pills pull-right">
+      <li role="presentation" class="active dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          Go to <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+          <li><a ui-sref="main"><i class="glyphicon glyphicon-home"></i> Welcome</a></li>
+          <li><a ui-sref="skills"><i class="glyphicon glyphicon-certificate"></i> Skills</a></li>
+          <li><a ui-sref="experience"><i class="glyphicon glyphicon-book"></i> Experience</a></li>
+          <li><a ui-sref="contact"><i class="glyphicon glyphicon-phone"></i> Connect</a></li>
+        </ul>
+      </li>
+    </ul>
+    <h3 class="profileName"><img class="avatar" src="images/avatar.png" alt="Avatar"/> Leonard Seymore</h3>
   </div>
   <div ui-view></div>
-</div>
-
-<div style="text-align: center;">
-  <a target="_blank" href="http://za.linkedin.com/in/leonardseymore"><img src="images/linkedin.png" alt="LinkedIn"/></a>
-  <a target="_blank" href="https://plus.google.com/u/0/+LeonardSeymore"><img src="images/googleplus.png" alt="Google+"/></a>
-  <a target="_blank" href="https://twitter.com/leonardseymore"><img src="images/twitter.png" alt="Twitter"/></a>
-  <a target="_blank" href="https://github.com/leonardseymore"><img src="images/github.png" alt="GitHub"/></a>
-  <a target="_blank" href="https://www.youtube.com/user/leonardseymore"><img src="images/youtube.png" alt="YouTube"/></a>
 </div>
 
 <script>

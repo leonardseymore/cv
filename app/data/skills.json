@@ -17,7 +17,8 @@
         {"name": "AWK", "level": 6},
         {"name": "Groovy", "level": 8},
         {"name": "JavaScript", "level": 10},
-        {"name": "Python", "level": 8}
+        {"name": "Python", "level": 8},
+        {"name": "Lua", "level": 7}
       ]
     },
     {
@@ -25,6 +26,14 @@
       "children": [
         {"name": "Spring", "level": 10},
         {"name": "JUnit", "level": 10}
+      ]
+    },
+    {
+      "name": "Mobile",
+      "children": [
+        {"name": "Ionic", "level": 7},
+        {"name": "Corona", "level": 7},
+        {"name": "Unity", "level": 5}
       ]
     },
     {
@@ -148,7 +157,8 @@
         {"name": "NetBeans", "level": 7},
         {"name": "Oracle JDeveloper", "level": 7},
         {"name": "SQL Developer", "level": 10},
-        {"name": "Toad", "level": 8}
+        {"name": "Toad", "level": 8},
+        {"name": "XCode", "level": 6}
       ]
     },
     {
