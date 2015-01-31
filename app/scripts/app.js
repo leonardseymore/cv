@@ -23,10 +23,13 @@ angular
         templateUrl: 'views/skills.html',
         controller: 'SkillsCtrl'
       })
+      .state("experience", {
+        url: "/",
+        templateUrl: 'views/experience.html'
+      })
       .state("contact", {
         url: "/",
-        templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
+        templateUrl: 'views/contact.html'
       })
 
     $urlRouterProvider.otherwise("/");

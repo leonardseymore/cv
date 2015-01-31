@@ -12,8 +12,4 @@ angular.module('cvApp')
     });
   })
 
-  .controller('ContactCtrl', function ($scope) {
-
-  })
-
 ;
