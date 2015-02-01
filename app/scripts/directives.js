@@ -69,7 +69,7 @@ angular.module('cvApp')
               .attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; })
 
             node.append("circle")
-              .attr("r", 4.5);
+              .attr("r", function(d) {return d.level == 10 ? 4.5 : 1;});
 
             node.append("text")
               .attr("dy", ".31em")

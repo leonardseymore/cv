@@ -5,14 +5,14 @@
   <div class="panel-body">
     <div class="hidden-xs" skills-matrix data="data"></div>
     <div class="visible-xs">
-      <script type="text/ng-template" id="field_renderer.html">
+      <script type="text/ng-template" id="inline_skills_renderer.html">
         {{item.name}} <span ng-show="item.level">({{item.level}})</span>
         <ul ng-if="item.children">
-          <li ng-repeat="item in item.children" ng-include="'field_renderer.html'"></li>
+          <li ng-repeat="item in item.children" ng-include="'inline_skills_renderer.html'"></li>
         </ul>
       </script>
       <ul>
-        <li ng-repeat="item in data.children" ng-include="'field_renderer.html'"></li>
+        <li ng-repeat="item in data.children" ng-include="'inline_skills_renderer.html'"></li>
       </ul>
     </div>
   </div>

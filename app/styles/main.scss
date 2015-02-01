@@ -125,6 +125,7 @@ body {
   animation: $name $time;
 }
 
+/*
 [ui-view].ng-enter .bunnykoo {
     @include animation(swivelin, 2s);
   }
@@ -137,4 +138,17 @@ body {
 @keyframes swivelin {
   from { transform: scale(0.1); }
   to   { transform: scale(1); }
+}
+*/
+
+.rotate {
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
 }
