@@ -33,17 +33,17 @@
     <ul class="visible-xs nav nav-pills pull-right">
       <li role="presentation" class="active dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-          Go <span class="caret"></span>
+           Go <i class="glyphicon glyphicon-triangle-bottom"></i>
         </a>
         <ul class="dropdown-menu dropdown-menu-right" role="menu">
-          <li><a ui-sref="main"><i class="glyphicon glyphicon-home"></i> Welcome</a></li>
-          <li><a ui-sref="skills"><i class="glyphicon glyphicon-certificate"></i> Skills</a></li>
-          <li><a ui-sref="experience"><i class="glyphicon glyphicon-book"></i> Experience</a></li>
-          <li><a ui-sref="contact"><i class="glyphicon glyphicon-phone"></i> Connect</a></li>
+          <li ng-class="{active: $state.includes('main')}"><a ui-sref="main"><i class="glyphicon glyphicon-home"></i> Welcome</a></li>
+          <li ng-class="{active: $state.includes('skills')}"><a ui-sref="skills"><i class="glyphicon glyphicon-certificate"></i> Skills</a></li>
+          <li ng-class="{active: $state.includes('experience')}"><a ui-sref="experience"><i class="glyphicon glyphicon-book"></i> Experience</a></li>
+          <li ng-class="{active: $state.includes('contact')}"><a ui-sref="contact"><i class="glyphicon glyphicon-phone"></i> Connect</a></li>
         </ul>
       </li>
     </ul>
-    <h3 class="profileName"><span><img ng-class="{rotate: loading}" class="avatar" src="images/avatar.png" alt="Avatar"/> Leonard Seymore</h3>
+    <h3 class="profileName"><span><img ng-class="{pulsate: loading}" class="avatar" src="images/avatar.png" alt="Avatar"/> Leonard Seymore</h3>
   </div>
   <div ui-view></div>
 </div>

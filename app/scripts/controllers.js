@@ -2,7 +2,8 @@
 
 angular.module('cvApp')
 
-  .controller('BodyCtrl', function ($scope) {
+  .controller('BodyCtrl', function ($scope, $state) {
+    $scope.$state = $state;
     $scope.loading = false;
 
     $scope.$on("loader_show", function () {
